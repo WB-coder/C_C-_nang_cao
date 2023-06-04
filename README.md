@@ -56,4 +56,6 @@ _ Void pointer:
         void *ptr = &a;
         ptr = &b;
         ptr = &c;
+        // print the value and the address of c variable
+        printf("ptr points to value: %d\n ptr storing address: %p", *(char*)ptr, ptr);
     }
