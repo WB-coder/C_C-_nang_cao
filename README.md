@@ -59,3 +59,7 @@ _ Void pointer:
         // print the value and the address of c variable
         printf("ptr points to value: %d\n ptr storing address: %p", *(char*)ptr, ptr);
     }
+_ Type conversion of a function:
+
+    void *ptr = &sum;
+    ((int (*)(int, int))ptr)(3,10); // point to sum function
