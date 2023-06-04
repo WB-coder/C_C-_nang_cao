@@ -67,3 +67,6 @@ _ Pointer array:
     
     void ptr[] = { &sum, &a, &b };
     printf("%d", *(int *)prt[1]); // print the value of interger variable (a)
+_ Pointer of a pointer:
+    
+    int **ptr2= &ptr1;
