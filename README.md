@@ -21,3 +21,23 @@ _ Initialize a pointer in function:
     {
         return *a + *b;
     }
+_ Function pointer:
+
+    int sum (int *a, int *b)
+    {
+        return *a + *b;
+    }
+    
+    int product (int *a, int *b)
+    {
+        return *a * *b;
+    }
+    
+    int calculate (int *a, int *b, int (*ptr) (int,int))
+    {
+        return ptr(a,b);
+    }
+    int main()
+    {
+        calculate(9,6, &sum);
+    }
