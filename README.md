@@ -42,3 +42,18 @@ _ Function pointer:
         calculate(9,6, &sum);
     }
     // The answer will be 15
+_ Void pointer:
+    
+    /*
+    It is impossible to point more variable address which have different types. 
+    Therefore, void pointer help to point any type of variable, but still need type conversion to get the variable value.
+    */
+    int main()
+    {
+        int a;
+        float b;
+        char c;
+        void *ptr = &a;
+        ptr = &b;
+        ptr = &c;
+    }
