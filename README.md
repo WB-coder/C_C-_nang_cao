@@ -9,10 +9,15 @@ contains all materials and descriptions of the C and C++ advanced course
 
 _ Initialize a pointer: 
 
-_int *ptr1 = NULL;_
+    int *ptr1 = NULL;
 
-_float *ptr2 = &a;_
+    float *ptr2 = &a;
 
-_void *ptr = &b;_
+    void *ptr = &b;
 
-_ Initialize a pointer function:
+_ Initialize a pointer in function:
+
+    int sum (int *a, int *b)
+    {
+        return *a + *b;
+    }
