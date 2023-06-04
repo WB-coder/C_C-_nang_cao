@@ -41,3 +41,4 @@ _ Function pointer:
     {
         calculate(9,6, &sum);
     }
+    // The answer will be 15
