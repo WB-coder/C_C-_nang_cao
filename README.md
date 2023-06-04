@@ -63,3 +63,7 @@ _ Type conversion of a function:
 
     void *ptr = &sum;
     ((int (*)(int, int))ptr)(3,10); // point to sum function
+_ Pointer array:
+    
+    void ptr[] = { &sum, &a, &b };
+    printf("%d", *(int *)prt[1]); // print the value of interger variable (a)
