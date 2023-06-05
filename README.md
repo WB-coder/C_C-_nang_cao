@@ -77,6 +77,10 @@ _ Pointer of a pointer:
     
 **Lesson 10 (linklist):**
 
+_ Work with malloc():
+
+    
+
 _ Create "Node" data type:
 
     struct Node{
