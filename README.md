@@ -85,3 +85,33 @@ _ Create "Node" data type:
     };
     
     typedef struct Node Node;
+    
+_ Create createNode() function:
+
+    Node *createNode (uint8_t value)
+    {
+        Node *newNode = (Node *)malloc(sizeof(Node));
+        newNode.value = value;
+        newNode.next = NULL;
+        return newNode;
+    }
+_ Create push_back() function:
+
+    void push_back (Node **array, uint8_t value)
+    {
+        Node *temp, *p;
+        temp = createNode(value);
+        if(*array == NULL)
+        {
+            *array = temp;
+        }
+        else
+        {
+            p= *array;
+            while (p.next !=NULL)
+            {
+                p = p.next;
+            }
+            p.next = temp;
+        }
+    }
