@@ -75,4 +75,13 @@ _ Pointer of a pointer:
     
 *****************************************************************************************************
     
+**Lesson 10 (linklist):**
 
+_ Create "Node" data type:
+
+    struct Node{
+    uint8_t value;
+    struct Node* next;
+    };
+    
+    typedef struct Node Node;
