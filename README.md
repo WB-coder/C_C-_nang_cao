@@ -4,8 +4,13 @@ contains all materials and descriptions of the C and C++ advanced course
 
 *****************************************************************************************************
 
+## Lesson 7 (Go to):
 
-**Lesson 9 (Pointer):**
+
+
+*****************************************************************************************************
+
+## Lesson 9 (Pointer):
 
 _ Initialize a pointer: 
 
@@ -46,7 +51,8 @@ _ Void pointer:
     
     /*
     It is impossible to point more variable address which have different types. 
-    Therefore, void pointer help to point any type of variable, but still need type conversion to get the variable value.
+    Therefore, void pointer help to point any type of variable, 
+    but still need type conversion to get the variable value.
     */
     int main()
     {
@@ -75,7 +81,7 @@ _ Pointer of a pointer:
     
 *****************************************************************************************************
     
-**Lesson 10 (linklist):**
+## Lesson 10 (linklist):
 
 _ Work with malloc():
 
