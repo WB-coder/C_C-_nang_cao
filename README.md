@@ -6,10 +6,49 @@ contains all materials and descriptions of the C and C++ advanced course
 
 ## Lesson 7 (Go to):
 
+_ Goto: is a method to change the normal direction of a code to the direction that the coder want.
 
+_ It is needed to have a position label to make the programme move to the desire direction.
+
+    int main()
+    {
+        char name[20];
+        name_position:
+        printf("tên là: ");
+        scanf("%s",name);
+        if(name[0]==NULL)
+        {
+            goto: name_position;
+        }
+    }
 
 *****************************************************************************************************
 
+## Lesson 8 (setjum):
+
+_ exit() function helps to end the programme when this function is executed
+
+    if(i==1)
+    {
+        exit(0) // end the programme
+    }
+    
+_ It is needed to include the _<setjmp.h>_ library to be able to use setjum functions.
+
+_ jmp_buf is a struct type that will be needed to run setjum code.
+
+_ setjmp( jmp_buf ) and longjmp( jmp_buf, int )  are two functions that go together. In detail, when longjmp() are run, the programme will go to the line where the code setjmp is placed.
+
+    jmp_buf jump;
+    int i = setjmp(jump);
+    printf("i = %d\n", i);
+    if(i!=0)
+        exit(0);
+    longjmp(jump,1); // move to the setjmp() function and its return value will be 1.
+    
+_ It is applied in button code where there is another button will interrupt when the button is running; and in TRY-CATCH-THROW method to test a code.
+
+*****************************************************************************************************
 ## Lesson 9 (Pointer):
 
 _ Initialize a pointer: 
